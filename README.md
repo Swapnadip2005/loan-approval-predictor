@@ -1,13 +1,13 @@
 # LoanIQ: AI-Powered Loan Approval Model
 
-**`LoanIQ`** is a **`Machine Learning Project`** that predicts loan approval decisions using a **`Random Forest Classifier`**. The model analyzes applicant financial data such as `Annual Income`, `Credit Score`, `Requested Loan Amount`, `Monthly Expense`, and more—to automate and streamline the loan approval process. 
-This repository provides code for:
+**`LoanIQ`** is a **`Machine Learning Project`** that predicts loan approval decisions using a **`Random Forest Classifier`**. The model analyzes applicant financial data such as `Annual Income`, `Credit Score`, `Requested Loan Amount`, `Monthly Expense`, and more—to automate and streamline the loan approval process. This repository provides code for:
 - **Data Gathering**
 - **EDA - Read and explore the data** 
 - **Feature creation**
 - **Train Test split the data**
 - **Fit and evaluate model**
 - **Feature importance**
+
 making it easy to reproduce results or integrate into larger systems.
 
 ## ✨ Features
