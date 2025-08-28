@@ -20,6 +20,11 @@ loan_type_map = {"Unsecured": 0, "Secured": 1}
 co_applicant_map = {"Yes": 0, "No": 1}
 
 
+@app.route("/")
+def home():
+    return "Service is running", 200
+
+
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.json
@@ -52,15 +57,15 @@ def predict():
         data.get("existingLoans", 0),
         data.get("totalExistingLoanAmount", 0),
         data.get("outstandingDebt", 0),
-        data.get("loanHistory", 0),  
+        data.get("loanHistory", 0),
         data.get("loanAmountRequested", 0),
         data.get("loanTerm", 0),
         loan_purpose,
         data.get("interestRate", 0),
         loan_type,
         co_applicant,
-        data.get("transactionFrequency", 0),  
-        data.get("defaultRisk", 0), 
+        data.get("transactionFrequency", 0),
+        data.get("defaultRisk", 0),
     ]
 
     prediction = model.predict([features])[0]
